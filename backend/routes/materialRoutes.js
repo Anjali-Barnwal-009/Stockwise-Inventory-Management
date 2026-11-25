@@ -1,0 +1,1 @@
+import {Router} from 'express';import {listMaterials,createMaterial,updateMaterial,deleteMaterial} from '../controllers/materialController.js';const router=Router();router.get('/',listMaterials);router.post('/',createMaterial);router.put('/:id',updateMaterial);router.delete('/:id',deleteMaterial);export default router;
